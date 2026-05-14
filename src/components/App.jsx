@@ -10,6 +10,7 @@ import About1 from './About1'
 import ArticleList from './ArticleLList';
 import blogData from '../data/blog';
 import Keypad from './Keypad';
+import EyesOnMe from './EyesOnMe';
 function App(){
     console.log(blogData)
     return(
@@ -24,6 +25,7 @@ function App(){
             <About1 image={blogData.image} about={blogData.about}/>
             <ArticleList posts={blogData.posts}/>
             <Keypad />
+            <EyesOnMe />
         </div>
     )
 }
