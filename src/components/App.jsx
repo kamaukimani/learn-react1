@@ -11,6 +11,7 @@ import ArticleList from './ArticleLList';
 import blogData from '../data/blog';
 import Keypad from './Keypad';
 import EyesOnMe from './EyesOnMe';
+import Toggle from './Toggle';
 function App(){
     console.log(blogData)
     return(
@@ -26,6 +27,8 @@ function App(){
             <ArticleList posts={blogData.posts}/>
             <Keypad />
             <EyesOnMe />
+            <br/>
+            <Toggle/>
         </div>
     )
 }
