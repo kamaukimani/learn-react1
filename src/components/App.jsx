@@ -9,6 +9,7 @@ import Header from './Header';
 import About1 from './About1'
 import ArticleList from './ArticleLList';
 import blogData from '../data/blog';
+import Keypad from './Keypad';
 function App(){
     console.log(blogData)
     return(
@@ -22,6 +23,7 @@ function App(){
             <Header name={blogData.name}/>
             <About1 image={blogData.image} about={blogData.about}/>
             <ArticleList posts={blogData.posts}/>
+            <Keypad />
         </div>
     )
 }
