@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import NavBar from './Nav'
 import Home from './Home';
 import About from './About';
@@ -15,8 +15,16 @@ import Toggle from './Toggle';
 import SpicyFoodList from './SpicyFoodList';
 function App(){
     console.log(blogData)
+    const [isOn,setIsOn]=useState(false);
+    function handleMode(){
+        setIsOn(isOn=>!isOn)
+    }
+    const color=isOn ? "black" : "white";
     return(
-        <div>
+        <div style={{background:color}}>
+            <button 
+            onClick={handleMode}>
+            {isOn ?"Darkmode" : "Light mode"}</button><br/>
             Hello World!
             <NavBar />
             <Home name="Kevin" city="Nyeri" color="blue" />
