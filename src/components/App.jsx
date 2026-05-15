@@ -23,8 +23,9 @@ function App(){
     return(
         <div style={{background:color}}>
             <button 
+            style={{background:"yellow"}}
             onClick={handleMode}>
-            {isOn ?"Darkmode" : "Light mode"}</button><br/>
+            {isOn ?"Dark Mode" : "Light Mode"}</button><br/>
             Hello World!
             <NavBar />
             <Home name="Kevin" city="Nyeri" color="blue" />
