@@ -15,6 +15,7 @@ import Toggle from './Toggle';
 import SpicyFoodList from './SpicyFoodList';
 import ShoppingList from './ShoppingList';
 // import items from '../data/item';
+import Header1 from './Header1';
 function App(){
     console.log(blogData)
     const [isOn,setIsOn]=useState(false);
@@ -24,13 +25,7 @@ function App(){
     const color=isOn ? "black" : "white";
     return(
         <div style={{background:color}}>
-           <header>
-            <h1>Shopster</h1>
-             <button 
-            style={{background:"yellow"}}
-            onClick={handleMode}>
-            {isOn ?"Dark Mode" : "Light Mode"}</button><br/>
-           </header>
+            <Header1 isOn={isOn} onDarkModeClick={handleMode} />
             <ShoppingList 
             //items={items}
             />

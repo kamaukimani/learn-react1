@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Item from './Item';
 import itemsArray from '../data/item';
+import Filter from './Filter';
 function ShoppingList(){
     const [filterBy,setFilterBy]=useState("All")
     const [items,setItem]=useState(itemsArray)
@@ -23,12 +24,7 @@ function ShoppingList(){
     ))
     return(
         <div>
-            <select name="filter" onChange={handleChange}>
-                <option value="All">Filter by category</option>
-                <option value="Produce">Produce</option>
-                <option value="Dairy">Dairy</option>
-                <option value="Dessert">Dessert</option>
-            </select>
+           <Filter onCategoryChange={handleChange} />
             <ul>
                 {itemList}
             </ul>

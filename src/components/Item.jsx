@@ -12,7 +12,7 @@ function Item({name,category}){
             <span>Category: {category}  </span>
             {/* <br /> */}
             <button 
-                style={{textDecoration:line}}
+                style={{textDecoration:line,backgroundColor:"light-purple"}}
                 onClick={handleClick}>
                 {isClicked ? "Remove From Cart" : "Add To Cart"}
             </button>
