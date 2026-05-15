@@ -13,6 +13,8 @@ import Keypad from './Keypad';
 import EyesOnMe from './EyesOnMe';
 import Toggle from './Toggle';
 import SpicyFoodList from './SpicyFoodList';
+import ShoppingList from './ShoppingList';
+// import items from '../data/item';
 function App(){
     console.log(blogData)
     const [isOn,setIsOn]=useState(false);
@@ -22,10 +24,16 @@ function App(){
     const color=isOn ? "black" : "white";
     return(
         <div style={{background:color}}>
-            <button 
+           <header>
+            <h1>Shopster</h1>
+             <button 
             style={{background:"yellow"}}
             onClick={handleMode}>
             {isOn ?"Dark Mode" : "Light Mode"}</button><br/>
+           </header>
+            <ShoppingList 
+            //items={items}
+            />
             Hello World!
             <NavBar />
             <Home name="Kevin" city="Nyeri" color="blue" />
