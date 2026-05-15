@@ -12,6 +12,7 @@ import blogData from '../data/blog';
 import Keypad from './Keypad';
 import EyesOnMe from './EyesOnMe';
 import Toggle from './Toggle';
+import SpicyFoodList from './SpicyFoodList';
 function App(){
     console.log(blogData)
     return(
@@ -29,6 +30,8 @@ function App(){
             <EyesOnMe />
             <br/>
             <Toggle/>
+            <br/>
+            <SpicyFoodList />
         </div>
     )
 }
