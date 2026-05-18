@@ -1,23 +1,41 @@
 {
-    "persons":[
-        {
-            "id":"1",
-            "firstName":"John",
-            "lastName":"Doe",
-            "checked":true
-
-        },
-        {
-            "id":"2",
-            "firstName":"Jane",
-            "lastName":"Catherine",
-            "checked":false
-        },
-        {
-            "id":"3",
-            "firstName":"Leah",
-            "lastName":"Simpson",
-            "checked":false
-        }
-    ]
+  "persons": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "admin": true
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Catherine",
+      "admin": false
+    },
+    {
+      "id": "3",
+      "firstName": "Leah",
+      "lastName": "Simpson",
+      "admin": false
+    },
+    {
+      "firstName": "Joel",
+      "lastName": "Hanna",
+      "admin": true,
+      "id": "mjwsx4R5oXA"
+    },
+    {
+      "firstName": "Charity",
+      "lastName": "Jones",
+      "admin": false,
+      "id": "aL9EA7uXT_I"
+    },
+    {
+      "firstName": "Kennedy",
+      "lastName": "Kimani",
+      "admin": true,
+      "id": "hB1JQkxrODs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
